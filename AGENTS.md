@@ -46,7 +46,6 @@ When refreshing the inventory:
 2. Compare directory names with public repositories returned by the GitHub API for `danielpradilla`.
 3. Include a project only when its deployed entry point, repository, README description, and representative screenshot can all be identified.
 4. Do not include infrastructure, private file tools, duplicate/legacy directories, third-party checkouts, or hosted apps without a public repository merely to increase the count.
-5. Update the project count in `.eyebrow` to match the number of `.project-card` elements.
 
 ## Screenshots
 
