@@ -30,6 +30,7 @@ The current page includes deployed top-level projects that have a matching publi
 
 | Project | Deployed path | Repository |
 | --- | --- | --- |
+| Swiss Railway Clock in D3.js | `/d3clock/` | `danielpradilla/d3clock` |
 | The Braided Crowns of Europe | `/european-monarchies-timeline/www/` | `danielpradilla/european-monarchies-timeline` |
 | Classification Model Visualizer | `/classification-visualization/` | `danielpradilla/classification-visualization` |
 | Stylometric Analysis | `/stylometric-analysis/` | `danielpradilla/stylometric-analysis` |
@@ -56,6 +57,8 @@ Prefer, in order:
 3. A fresh browser screenshot of the deployed app or a locally served copy of its public assets.
 
 Store final images in `images/`, use descriptive lowercase filenames, and normalize them to a 1000-pixel-wide JPEG at 80% quality:
+
+The Swiss Railway Clock card is intentionally a live, non-interactive iframe instead of a screenshot so its hands show the current time. Keep a full-card link over the iframe so the project remains easy to open.
 
 Use the available image-processing workflow to export a proportional, 1000-pixel-wide JPEG at 80% quality. Do not commit temporary captures or original full-resolution assets.
 
