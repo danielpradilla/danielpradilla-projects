@@ -30,8 +30,8 @@ The current page includes deployed top-level projects that have a matching publi
 
 | Project | Deployed path | Repository |
 | --- | --- | --- |
-| UK Music Cities Explorer | `/uk-music-cities/` | `danielpradilla/uk-music-cities` |
 | Swiss Railway Clock in D3.js | `/d3clock/` | `danielpradilla/d3clock` |
+| UK Music Cities Explorer | `/uk-music-cities/` | `danielpradilla/uk-music-cities` |
 | The Braided Crowns of Europe | `/european-monarchies-timeline/www/` | `danielpradilla/european-monarchies-timeline` |
 | Classification Model Visualizer | `/classification-visualization/` | `danielpradilla/classification-visualization` |
 | Stylometric Analysis | `/stylometric-analysis/` | `danielpradilla/stylometric-analysis` |
@@ -40,6 +40,8 @@ The current page includes deployed top-level projects that have a matching publi
 | Le Bon Coin Query | `/leboncoin/` | `danielpradilla/leboncoin` |
 
 Stylometric Analysis is intentionally password-protected. EchoTree intentionally redirects to its login screen. Do not describe either as publicly accessible; “published” is accurate.
+
+The Swiss Railway Clock in D3.js is permanently pinned as the first project card. It must remain the first `<article>` inside `.project-grid`, which places it at the top left of the two-column desktop layout and first in the one-column mobile layout. Never insert another project before it.
 
 When refreshing the inventory:
 
