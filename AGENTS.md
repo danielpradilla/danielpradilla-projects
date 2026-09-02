@@ -30,6 +30,7 @@ The current page includes deployed top-level projects that have a matching publi
 
 | Project | Deployed path | Repository |
 | --- | --- | --- |
+| UK Music Cities Explorer | `/uk-music-cities/` | `danielpradilla/uk-music-cities` |
 | Swiss Railway Clock in D3.js | `/d3clock/` | `danielpradilla/d3clock` |
 | The Braided Crowns of Europe | `/european-monarchies-timeline/www/` | `danielpradilla/european-monarchies-timeline` |
 | Classification Model Visualizer | `/classification-visualization/` | `danielpradilla/classification-visualization` |
