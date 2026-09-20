@@ -63,7 +63,7 @@ a:focus-visible {
 }
 
 .site-header {
-  min-height: 150px;
+  padding: 8px 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -277,9 +277,8 @@ h2 a:hover {
   }
 
   .site-header {
-    min-height: 128px;
     align-items: flex-end;
-    padding: 28px 0;
+    padding: 8px 0 20px;
   }
 
   .site-brand span {
