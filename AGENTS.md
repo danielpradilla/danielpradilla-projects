@@ -12,13 +12,13 @@ Publish a responsive project index at `https://www.danielpradilla.info/projects/
 - A link to the deployed project.
 - A link to its GitHub repository.
 
-Both the page header and footer must link to `/blog/`.
+The page header must match the live blog header (`https://www.danielpradilla.info/blog/`) exactly: uppercase "DANIEL PRADILLA" wordmark plus tagline on the left, and the same nav item set/order on the right — About me, Projects, LinkedIn, Best of, Lifestyle, Management, Software — linking to the same blog/category/external URLs the blog itself uses, with `aria-current="page"` on Projects. This is a deliberate exception to the compact `.dp-navbar` header defined in `danielpradilla-app-style/GUIDE.md`: that pattern is for individual project sub-pages, not this hub page. If the blog's own header changes, update this one to match. The footer keeps its own nav (`Blog`, `GitHub`) as before.
 
 ## Visual sources of truth
 
 Combine these references rather than copying either one literally:
 
-1. The active blog at `https://www.danielpradilla.info/blog/` supplies the masthead/footer language, restrained typography, and `#fffdf9` background.
+1. The active blog at `https://www.danielpradilla.info/blog/` supplies the masthead language (copied exactly, see above), restrained typography, and `#fffdf9` background.
 2. `https://github.com/danielpradilla/danielpradilla-app-style` supplies the app tokens and component rules: system sans typography, light weights, square edges, hairline borders, muted text, no decorative shadows, and color reserved for interaction.
 3. `https://www.habibicode.org/` is only a layout reference for the two-column screenshot-card index.
 
@@ -49,6 +49,7 @@ When refreshing the inventory:
 2. Compare directory names with public repositories returned by the GitHub API for `danielpradilla`.
 3. Include a project only when its deployed entry point, repository, README description, and representative screenshot can all be identified.
 4. Do not include infrastructure, private file tools, duplicate/legacy directories, third-party checkouts, or hosted apps without a public repository merely to increase the count.
+5. Before (or as part of) adding a project to this page, migrate its own deployed page to the compact site-bar spec in `danielpradilla-app-style/GUIDE.md` ("Header And Footer Navigation" → "Compact site-bar implementation requirements") if it doesn't already match it. Adopting a project into `/projects/` is what puts that navigation bar in place — a project isn't done being adopted until its header falls in line with every other project's.
 
 ## Screenshots
 
@@ -89,7 +90,7 @@ Verify at desktop and mobile widths:
 - Every card image loads.
 - The card count matches the eyebrow count.
 - The mobile grid has one column and `document.documentElement.scrollWidth <= window.innerWidth`.
-- Header and footer both contain working Blog and GitHub links.
+- Header matches the live blog header (wordmark, tagline, all seven nav links) and footer contains working Blog and GitHub links.
 - Focus states are visible and image alt text is meaningful.
 - Project and GitHub destinations are correct. Treat an expected `401` or login redirect as valid only for the two protected projects noted above.
 

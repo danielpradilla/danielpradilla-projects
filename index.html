@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Published projects by Daniel Pradilla, with live demos and source code." />
     <title>Projects | Daniel Pradilla</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XYG5QF5DZL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XYG5QF5DZL');
+    </script>
     <link rel="stylesheet" href="styles.css?v=20260827" />
   </head>
   <body>
@@ -16,8 +23,13 @@
         <span>getting the most out of technology</span>
       </a>
       <nav aria-label="Primary navigation">
-        <a href="/blog/">Blog</a>
-        <a href="https://github.com/danielpradilla" rel="me">GitHub</a>
+        <a href="https://www.danielpradilla.info/blog/about/">About me</a>
+        <a aria-current="page" href="/projects/">Projects</a>
+        <a href="https://www.linkedin.com/in/danielpradilla/">LinkedIn</a>
+        <a href="https://www.danielpradilla.info/blog/category/bestof/">Best of</a>
+        <a href="https://www.danielpradilla.info/blog/category/lifestyle/">Lifestyle</a>
+        <a href="https://www.danielpradilla.info/blog/category/management/">Management</a>
+        <a href="https://www.danielpradilla.info/blog/category/software/">Software</a>
       </nav>
     </header>
 
@@ -41,6 +53,36 @@
           <footer class="project-links">
             <a href="https://github.com/danielpradilla/d3clock">GitHub repo</a>
             <a href="/d3clock/">Explore project <span aria-hidden="true">→</span></a>
+          </footer>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="/swiss-commutes/" aria-label="Open Swiss Commutes">
+            <img src="images/swiss-commutes.jpg" alt="Swiss Commutes showing morning journeys into and out of Zürich" width="1000" height="562" />
+          </a>
+          <div class="project-copy">
+            <p class="project-type">Data visualization</p>
+            <h2><a href="/swiss-commutes/">Swiss Commutes</a></h2>
+            <p>Swiss Commutes is an illustrative working-day model for sixteen Swiss locations.</p>
+          </div>
+          <footer class="project-links">
+            <a href="https://github.com/danielpradilla/swiss-commutes">GitHub repo</a>
+            <a href="/swiss-commutes/">Explore project <span aria-hidden="true">→</span></a>
+          </footer>
+        </article>
+
+        <article class="project-card">
+          <a class="project-image" href="/projects/choplifter/" aria-label="Open Choplifter, one-shotted">
+            <img src="images/choplifter.jpg" alt="Choplifter experiments comparing browser games made by four OpenAI models" width="1000" height="563" />
+          </a>
+          <div class="project-copy">
+            <p class="project-type">AI experiment · Browser games</p>
+            <h2><a href="/projects/choplifter/">Choplifter, one-shotted</a></h2>
+            <p>One Choplifter prompt, four OpenAI models: a personal collection of browser-game experiments from February 5 to September 5, 2026.</p>
+          </div>
+          <footer class="project-links">
+            <a href="https://github.com/danielpradilla/choplifter">GitHub repo</a>
+            <a href="/projects/choplifter/">Explore project <span aria-hidden="true">→</span></a>
           </footer>
         </article>
 
