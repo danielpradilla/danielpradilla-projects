@@ -8,6 +8,25 @@ For project-selection rules, screenshot preparation, visual constraints, verific
 
 The Braided Crowns of Europe is published at [projects/european-monarchies-timeline/](https://www.danielpradilla.info/projects/european-monarchies-timeline/), with the timeline's `www/` contents served directly at that URL.
 
+## Project URLs
+
+All eleven catalogued projects are published under `/projects/<slug>/`: `d3clock`, `bivariate-climate-map`, `swiss-commutes`, `choplifter`, `uk-music-cities`, `european-monarchies-timeline`, `classification-visualization`, `stylometric-analysis`, `flipasio`, `leboncoin`, and `diminishing-returns`.
+
+The domain-root redirect rules are maintained in `ops/project-redirects.htaccess`; merge them into the site's existing `.htaccess`, not the catalog directory's file. Migrated URLs use permanent HTTP 308 redirects, preserving methods, query strings and deep links. The older monarchies redirect remains permanent HTTP 301. Flipasio's former `/flipasio/web/` prefix is removed, and its dictionary is now `web/data/calculator_words.txt`. The historical Geneva and Swiss border commute aliases lead directly to Swiss Commutes.
+
+EchoTree was removed from the catalog. EchoSpring, its accounts and the existing `/echotree/` redirects remain unchanged.
+
+### Deployment targets
+
+Publish only this catalog's `index.html`, `styles.css`, `images/` and `.htaccess` to `~/danielpradilla.info/projects/`. Do not mirror or delete that directory: it also holds the applications.
+
+Swiss Commutes uses its checked `out/` with `/projects/swiss-commutes` as its Next base path. Its deployed private train state and timetable were retained; the traffic collector, train collector and timetable updater cron paths now point into `projects/swiss-commutes/`.
+
+UK Music Cities uses `npm run build:deploy` in its `interactive/` directory, then publishes `dist/` and the PHP `api/` to `projects/uk-music-cities/`. The score database remains outside the web root. Existing browser player cookies were scoped to the old path, so returning players may receive a new identity; stored leaderboard scores are retained.
+
+Flipasio publishes the contents of `web/` directly to `projects/flipasio/`, including `web/data/`. The other static projects retain their existing relative asset paths.
+
+
 ## Local preview
 
 From this directory:
