@@ -10,7 +10,7 @@ The Braided Crowns of Europe is published at [projects/european-monarchies-timel
 
 ## Project URLs
 
-All eleven catalogued projects are published under `/projects/<slug>/`: `d3clock`, `bivariate-climate-map`, `swiss-commutes`, `choplifter`, `uk-music-cities`, `european-monarchies-timeline`, `classification-visualization`, `stylometric-analysis`, `flipasio`, `leboncoin`, and `diminishing-returns`.
+All eleven catalogued projects are published under `/projects/<slug>/`: `d3clock`, `diminishing-returns`, `leboncoin`, `flipasio`, `stylometric-analysis`, `classification-visualization`, `european-monarchies-timeline`, `uk-music-cities`, `choplifter`, `swiss-commutes`, and `bivariate-climate-map`. The clock stays pinned first; the rest run newest to oldest.
 
 The domain-root redirect rules are maintained in `ops/project-redirects.htaccess`; merge them into the site's existing `.htaccess`, not the catalog directory's file. Migrated URLs use permanent HTTP 308 redirects, preserving methods, query strings and deep links. The older monarchies redirect remains permanent HTTP 301. Flipasio's former `/flipasio/web/` prefix is removed, and its dictionary is now `web/data/calculator_words.txt`. The historical Geneva and Swiss border commute aliases lead directly to Swiss Commutes.
 
